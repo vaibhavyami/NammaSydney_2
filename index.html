@@ -74,32 +74,35 @@
         }
 
         
-        .navbar{            
-            background-color: blueviolet; 
+        .navbar{       
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;     
+            background-color: red; 
             grid-row-start: 2;
-            grid-row-end: 5;           
+            grid-row-end: 5;   
+            align-items:  center
+            ;       
         }
 
-        .navitems{
-            background-color: blue; 
-            height: 100%;
-            width: 100%;           
-        }
+       
 
         .navbody{
             border: solid green;
             background-color: green; 
             grid-column-start: 2;
-            grid-column-end: 6;         
+            grid-column-end: 6;   
+            grid-row-start: 2;
+            grid-row-end: 6;      
         }
 
-        #navitems {
+        #iditems {
         
             height: 100%;
             width: 100%;       
         }
 
-        #navbody {
+        #idbody {
         
             height: 100%;
             width: 100%;       
@@ -174,12 +177,12 @@
         <img class="innerrightheader" src="Images/NSW.png" style="max-width:100%;"/>
         <img class="outerrightheader" src="Images/Flag-Australia.webp" style="max-width:100%;"/>
         <div class="navbar">
-            <iframe name="navitems" src="navigator.html" id="navitems" frameborder="0"></iframe>
+            <iframe name="navitems" id="iditems" src="navigator.html" frameborder="0"></iframe>
         </div>
-        <div class="item7">
-            <iframe src="" name="navbody" id="navbody" frameborder="1"></iframe>
+        <div class="navbody">
+            <iframe src="" name="navbody" id="idbody" frameborder="0"></iframe>
         </div>
-        <div class="item8">This is grid 8</div>
+        <!-- <div class="item8">This is grid 8</div>
         <div class="item9">This is grid 9</div>
         <div class="item10">This is grid 10</div>
         <div class="item11">This is grid 11</div>
@@ -191,7 +194,7 @@
         <div class="item17">This is grid 13</div>
         <div class="item18">This is grid 14</div>
         <div class="item19">This is grid 15</div>
-        <div class="item20">This is grid 16</div>
+        <div class="item20">This is grid 16</div> -->
         
     </div>
     
