@@ -53,10 +53,7 @@
 
             display: flex;            
             justify-content: center;
-            align-items: center;
-                       
-            
-                    
+            align-items: center;  
         }
 
         
@@ -76,17 +73,38 @@
             object-fit: cover;       
         }
 
-        .item5{            
-            background-color: aqua;
+        
+        .navbar{            
+            background-color: blueviolet; 
+            grid-row-start: 2;
+            grid-row-end: 5;           
         }
 
-        .item6{            
-            background-color: blueviolet;            
+        .navitems{
+            background-color: blue; 
+            height: 100%;
+            width: 100%;           
         }
 
-        .item7{
-            background-color: blue;            
+        .navbody{
+            border: solid green;
+            background-color: green; 
+            grid-column-start: 2;
+            grid-column-end: 6;         
         }
+
+        #navitems {
+        
+            height: 100%;
+            width: 100%;       
+        }
+
+        #navbody {
+        
+            height: 100%;
+            width: 100%;       
+        }
+
 
         .item8{
             background-color: rgb(199, 38, 65);            
@@ -148,24 +166,19 @@
         <img class="outerleftheader" src="Images/Flag-India.webp" style="max-width:100%;"/>
         <img class="innerleftheader" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
 
-        <div class="header">
-
-        <div class="headertext">
-            
-            <h2> ನಮ್ಮ ಸಿಡ್ನಿ </h2></div>
-             <!-- <div class="itema">This is grid a</div>
-            <div class="itemb">This is grid b</div>
-            <div class="itemc">This is grid c</div>
-            <div class="itemd">This is grid d</div>
-            <div class="iteme">This is grid e</div>
-            <div class="itemf">This is grid f</div>
-            <div class="itemg">This is grid g</div>
-            <div class="itemh">This is grid h</div> -->
+        <div class="header">           
+            <h2> ನಮ್ಮ ಸಿಡ್ನಿ </h2>
         </div>
+             
+        
         <img class="innerrightheader" src="Images/NSW.png" style="max-width:100%;"/>
         <img class="outerrightheader" src="Images/Flag-Australia.webp" style="max-width:100%;"/>
-        <div class="item6">This is grid 6</div>
-        <div class="item7">This is grid 7</div>
+        <div class="navbar">
+            <iframe name="navitems" src="navigator.html" id="navitems" frameborder="0"></iframe>
+        </div>
+        <div class="item7">
+            <iframe src="" name="navbody" id="navbody" frameborder="1"></iframe>
+        </div>
         <div class="item8">This is grid 8</div>
         <div class="item9">This is grid 9</div>
         <div class="item10">This is grid 10</div>
