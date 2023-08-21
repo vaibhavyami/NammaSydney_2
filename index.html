@@ -29,11 +29,11 @@
             height: 100%;
             width: 100%;
             background-color: yellow;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
 
-        .firstblock {
+        .outerleftheader {
             background-color: blue;
             height: 100%;
             width: 100%;
@@ -41,7 +41,7 @@
             
         }
 
-        .leftheader {
+        .innerleftheader {
             background-color: rgb(199, 38, 65);  
             height: 100%;
             width: 100%;  
@@ -49,56 +49,32 @@
         }
 
 
-        .header{
-            display: grid; 
-            border: none; 
-            grid-template-columns: repeat(4, 1fr);        
-            grid-template-rows: repeat(2, 1fr); 
-            column-gap: 2px;
-            margin: 0%;
-            padding: 0%;
-            background-color: cadetblue;
+        .header{  
+
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+                       
             
                     
         }
 
-        .itema {
-            background-color: yellow;  
-                      
-        }
-        .itemb {
-            background-color: orange;            
-        }
-        .itemc {
-            background-color: yellow;            
-        }
-        .itemd {
-            background-color: orange;            
-        }
-
-        .iteme {
-            background-color: orange;            
-        }
-        .itemf {
-            background-color: yellow;            
-        }
-        .itemg {
-            background-color: orange;            
-        }
-        .itemh {
-            background-color: yellow;            
-        }
+        
         
 
-        
-
-        .rightheader {
+        .innerrightheader {
             background-color: blueviolet;  
             height: 100%;
             width: 100%;   
             object-fit: cover;       
         }
 
+        .outerrightheader {
+            background-color: blueviolet;  
+            height: 100%;
+            width: 100%;   
+            object-fit: cover;       
+        }
 
         .item5{            
             background-color: aqua;
@@ -148,27 +124,46 @@
             background-color: rgb(199, 38, 65);            
         }
 
+        .item17{            
+            background-color: aqua;
+        }
+
+        .item18{            
+            background-color: blueviolet;            
+        }
+
+        .item19{
+            background-color: blue;            
+        }
+        .item20{
+            background-color: rgb(199, 38, 65);            
+        }
+
 
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img class="firstblock" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
-        <img class="leftheader" src="Images/Qantas.jpg" style="max-width:100%;"/>
+        <img class="outerleftheader" src="Images/Flag-India.webp" style="max-width:100%;"/>
+        <img class="innerleftheader" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
 
         <div class="header">
-             <div class="itema">This is grid a</div>
+
+        <div class="headertext">
+            
+            <h2> ನಮ್ಮ ಸಿಡ್ನಿ </h2></div>
+             <!-- <div class="itema">This is grid a</div>
             <div class="itemb">This is grid b</div>
             <div class="itemc">This is grid c</div>
             <div class="itemd">This is grid d</div>
             <div class="iteme">This is grid e</div>
             <div class="itemf">This is grid f</div>
             <div class="itemg">This is grid g</div>
-            <div class="itemh">This is grid h</div>
+            <div class="itemh">This is grid h</div> -->
         </div>
-        <img class="rightheader" src="Images/Sydney_Pano.jpeg" style="max-width:100%;"/>
-        <div class="item5">This is grid 5</div>
+        <img class="innerrightheader" src="Images/NSW.png" style="max-width:100%;"/>
+        <img class="outerrightheader" src="Images/Flag-Australia.webp" style="max-width:100%;"/>
         <div class="item6">This is grid 6</div>
         <div class="item7">This is grid 7</div>
         <div class="item8">This is grid 8</div>
@@ -180,6 +175,10 @@
         <div class="item14">This is grid 14</div>
         <div class="item15">This is grid 15</div>
         <div class="item16">This is grid 16</div>
+        <div class="item17">This is grid 13</div>
+        <div class="item18">This is grid 14</div>
+        <div class="item19">This is grid 15</div>
+        <div class="item20">This is grid 16</div>
         
     </div>
     
