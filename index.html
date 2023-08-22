@@ -13,14 +13,15 @@
         html{
             width: 100%;
             height: 100%;
-            background-color: red;
+            
             }
 
         body {
 
             width: 100%;
             height: 100%;
-            background-color: green;
+            background-color: bisque;
+            
 
         }
 
@@ -28,8 +29,8 @@
             display: grid;
             height: 100%;
             width: 100%;
-            background-color: yellow;
-            grid-template-columns: repeat(5, 0.6fr);
+            
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: .2fr 1fr 1fr 1fr;
             grid-auto-columns: auto;
             grid-auto-rows: auto;
@@ -43,10 +44,10 @@
             grid-area: a;
             display: flex;
             flex-wrap: wrap;     
-            background-color: blue;
+            
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
             
         }
 
@@ -54,28 +55,27 @@
             display: flex;
             flex-wrap: wrap; 
             grid-area: b;    
-            background-color: rgb(199, 38, 65);  
-            height: 100%;
+            
             width: 100%;  
-            object-fit: cover;        
+            object-fit: fill;        
         }
 
 
         .header{  
             display: flex;
             flex-wrap: wrap; 
-            grid-area: c;    
-            display: flex;            
+            grid-area: c;                  
             justify-content: center;
-            align-items: center;  
-            margin: auto;
-            font-size: 8em;   
+            align-items: center;             
+            font-size: 2.5em; 
+            border: solid;  
+            background-color: burlywood;
               
         }
 
         @media screen and (max-width: 601px) {
             .header {
-              font-size: .5em;
+              font-size: 0.5em;
             }
           }
           
@@ -89,7 +89,7 @@
 
         .innerrightheader {
             grid-area: d;   
-            background-color: blueviolet;  
+            
             height: 100%;
             width: 100%;   
             object-fit: fill;       
@@ -97,7 +97,7 @@
 
         .outerrightheader {
             grid-area: e;    
-            background-color: blueviolet;  
+            
             height: 100%;
             width: 100%;   
             object-fit:fill;       
@@ -106,88 +106,91 @@
         
         .navbar{       
             display: flex;
+            border: solid;
+            height: 100%;
             flex-direction: column;
             flex-wrap: wrap;     
-            background-color: red; 
+            
             grid-row-start: 2;
             grid-row-end: 5;   
-            align-items:  center
-            ;       
+            justify-content: flex-start;
+                  
         }
 
        
 
         .navbody{
-            border: solid green;
-            background-color: green; 
+            border: none;
+            
             grid-column-start: 2;
             grid-column-end: 6;   
             grid-row-start: 2;
-            grid-row-end: 6;      
+            grid-row-end: 6; 
+
         }
 
         #iditems {
-        
+            
             height: 100%;
             width: 100%;       
         }
 
         #idbody {
-        
+            
             height: 100%;
             width: 100%;       
         }
 
 
         .item8{
-            background-color: rgb(199, 38, 65);            
+                       
         }
 
         .item9{
-            background-color: blue;
+            
         }
 
         .item10{
-            background-color: rgb(199, 38, 65);            
+                  
         }
 
         .item11{
-            background-color: aqua;            
+                      
         }
 
         .item12{
-            background-color: blueviolet;            
+                    
         }
 
 
         .item13{            
-            background-color: aqua;
+            
         }
 
         .item14{            
-            background-color: blueviolet;            
+                  
         }
 
         .item15{
-            background-color: blue;            
+                       
         }
         .item16{
-            background-color: rgb(199, 38, 65);            
+                     
         }
 
         .item17{            
-            background-color: aqua;
+            
         }
 
         .item18{            
-            background-color: blueviolet;            
+                  
         }
 
         .item19{
-            background-color: blue;            
+                
         }
         .item20{
-            background-color: rgb(199, 38, 65);            
+                      
         }
 
 
