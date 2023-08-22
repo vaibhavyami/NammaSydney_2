@@ -30,11 +30,17 @@
             width: 100%;
             background-color: yellow;
             grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: .2fr 1fr 1fr 1fr;
             grid-auto-columns: auto;
+            grid-auto-rows: auto;
+            grid-template-areas: 
+
+            "a b c d e"
+            
         }
 
         .outerleftheader {
+            grid-area: a;
             display: flex;
             flex-wrap: wrap;     
             background-color: blue;
@@ -46,7 +52,8 @@
 
         .innerleftheader {
             display: flex;
-            flex-wrap: wrap;     
+            flex-wrap: wrap; 
+            grid-area: b;    
             background-color: rgb(199, 38, 65);  
             height: 100%;
             width: 100%;  
@@ -56,7 +63,8 @@
 
         .header{  
             display: flex;
-            flex-wrap: wrap;     
+            flex-wrap: wrap; 
+            grid-area: c;    
             display: flex;            
             justify-content: center;
             align-items: center;  
@@ -67,7 +75,8 @@
 
         .innerrightheader {
             display: flex;
-            flex-wrap: wrap;     
+            flex-wrap: wrap;  
+            grid-area: d;   
             background-color: blueviolet;  
             height: 100%;
             width: 100%;   
@@ -76,7 +85,8 @@
 
         .outerrightheader {
             display: flex;
-            flex-wrap: wrap;     
+            flex-wrap: wrap; 
+            grid-area: e;    
             background-color: blueviolet;  
             height: 100%;
             width: 100%;   
