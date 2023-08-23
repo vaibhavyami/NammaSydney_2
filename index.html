@@ -62,15 +62,51 @@
 
 
         .header{  
-            display: flex;
-            flex-wrap: wrap; 
-            grid-area: c;                  
-            justify-content: center;
-            align-items: center;             
-            font-size: 2.5em; 
+            display: grid;
             border: solid;  
             background-color: burlywood;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
               
+        }
+
+        .kflag{
+            display: flex;
+            flex-wrap: wrap;     
+            
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        .nflag{
+            display: flex;
+            flex-wrap: wrap;     
+            
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        .ktext{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;     
+            margin: auto;
+            height: 100%;
+            width: 100%; 
+            font-size: larger;           
+        }
+
+        .ntext{
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;     
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            font-size: larger;
         }
 
         @media screen and (max-width: 601px) {
@@ -202,8 +238,12 @@
         <img class="outerleftheader" src="Images/Flag-India.webp" style="max-width:100%;"/>
         <img class="innerleftheader" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
 
-        <div class="header">           
-            <h2> ನಮ್ಮ ಸಿಡ್ನಿ </h2>
+        <div class="header">
+            <img class="kflag" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
+            <img class="nflag" src="Images/NSW.png" style="max-width:100%;"/>  
+            <div class="ktext"><h2>ನಮ್ಮ</h2></div>
+            <div class="ntext"><h2>ಸಿಡ್ನಿ</h2></div>         
+           
         </div>
              
         
