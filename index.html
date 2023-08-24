@@ -38,7 +38,7 @@
 
         .leftpanel{
             display: grid;
-            border: solid red;
+            
             grid-area: a;    
             height: 100%;
             width: 100%;             
@@ -53,7 +53,9 @@
         }
 
         .outerleftheader{
-            border:solid blue;
+            height: 100%;
+            width: 100%;   
+            object-fit:fill;    
             
         }
 
@@ -67,28 +69,23 @@
             grid-column-start: 1;
             grid-column-end: 2;
             height: 100%;
-            border: solid yellow;
+            
         }
 
         a {
             color: white;
             text-decoration: double;
-            align-items: center;
             margin-right: auto;
-            margin-left: auto;
-            width: 20em;
+            margin-left: 05%;
+            
+            
         }
 
         .innerleftheader {
-            display: flex;
-            margin-left: auto;
-            flex-wrap: wrap; 
-            grid-area: b;    
+            
             height: 100%;
-            width: 100%; 
-            grid-row-start: 1;
-            grid-row-end: 2;   
-            object-fit: fill;        
+            width: 100%;   
+            object-fit:fill;    
         }
 
 
@@ -98,10 +95,10 @@
             background-color: burlywood;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-              
-        }
-
-        
+            height: 100%;
+            width: 100%;   
+            object-fit:fill;      
+        }        
 
         .kflag{
             display: flex;
@@ -148,18 +145,13 @@
         
 
         .innerrightheader {
-            display: flex;
-            flex-wrap: wrap;
-            grid-area: d; 
             height: 100%;
             width: 100%;   
-            object-fit: fill;       
+            object-fit:fill;         
         }
 
         .outerrightheader {
-            display: flex;
-            flex-wrap: wrap;
-            grid-area: e;
+            
             height: 100%;
             width: 100%;   
             object-fit:fill;       
@@ -222,7 +214,7 @@
         </div>
         
        
-        <!-- <img class="innerleftheader" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
+         <img class="innerleftheader" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
 
         <div class="header">
             <img class="kflag" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
@@ -236,8 +228,8 @@
         
         <div class="navbody">
             <iframe src="" name="namebody" id="idbody" frameborder="0"></iframe>
-        </div> -->
-        
+        </div> 
+         
         
     </div>
     
