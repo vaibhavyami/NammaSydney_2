@@ -43,7 +43,7 @@
             height: 100%;
             width: 100%;             
             grid-template-columns: 1fr;
-            grid-template-rows: 2fr;              
+            grid-template-rows: 0.25fr 0.75fr;              
             background-color: rgba(0, 0, 0, 0.8);
             grid-row-start: 1;
             grid-row-end: 5;
@@ -60,9 +60,23 @@
         .navbar{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-evenly;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 100%;
+            border: solid yellow;
+        }
 
+        a {
+            color: white;
+            text-decoration: double;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            width: 20em;
         }
 
         .innerleftheader {
